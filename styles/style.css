@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  
+  margin: 0;
+  
+}
+
+#fixed-width{
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 130px 1fr 200px;
+  grid-template-columns: 1fr 600px 1fr;
+  margin-top: 30px;
+}
+/* header style */
+#game-header{
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:palevioletred;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  #score-board{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    height: 50px;
+  }
+
+  .player-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: grey;
+    gap: 1em;
+  }
+
+  /* #game-header > div:nth-of-type(1){
+    padding: 15px;
+  } */
+
+  #header-button-group{
+    align-self: flex-end;
+    margin-right: 5px;
+
+
+  } 
+
+  /* content style */
+  main{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color:grey;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top:none;
+}
+
+h2,p{
+  color : white;
+}
+.modal{
+  margin-top: 200px;
+}
+.modal p{
+  color : black;
+
+}
+
+.active{
+  color : black;
+  
+}
+.running{
+  background-color: black;
+
+}
+.notActive{
+  color: grey;
+}
+
+#guess-result{
+height: 20px;
+}
+
+/* #game-over-screen{
+  background-image: url("../images/victory.webp");
+} */
+  
